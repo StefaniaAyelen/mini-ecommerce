@@ -1,0 +1,266 @@
+*{
+    margin: 0px;
+}
+
+body {
+    background-color: #fbe3d3;
+}
+
+
+
+/* -------------------- NAV Y HEADER ----------------- */
+.logo{
+    width: 10%;
+    height: auto;
+    min-width: 150px;
+
+}
+
+.logo img {
+    width: 35%;
+    border-radius: 100px;
+}
+
+#encabezado {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffb6c1;
+    border: 2px solid salmon;
+    border-radius: 20px;
+}
+
+.barra-busqueda {
+    height: 20px;
+    width: 30%;
+    background-color: #6f4e37;
+    color: #fbe3d3;
+    border-radius: 5px;
+}
+
+.barra-busqueda::placeholder {
+    color: #fbe3d3; /* Elegí el color que quieras */
+    opacity: 1;     /* Para que no se vea desvanecido */
+}
+
+
+
+/* -------------------- CONTAINER ----------------- */
+.container-productos {
+    background-color: #ffb6c1;
+    border: 2px solid salmon;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    flex-wrap: wrap;
+}
+
+/* -------------------- TARJETA PRODUCTO ----------------- */
+
+.tarjeta-producto img {
+    border-radius: 15px;
+    width: 100px;
+    height: 100px;
+}
+
+.tarjeta-producto {
+    border: 2px solid salmon;
+    border-radius: 15px;
+    font-family: Jingle;
+    background-color: #fbe3d3;
+    box-shadow: 0 4px 8px #8b5e3c33;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.tarjeta-producto p, button {
+    margin: 5px;
+}
+
+.tarjeta-producto p {
+    font-size: 15px;
+    font-family: Bethia;
+    color: #403f3f;
+    font-weight: 900
+}
+
+.tarjeta-producto h3 {
+    color: #403f3f;
+    font-size: 20px;
+}
+
+.tarjeta-producto button {
+    background-color: #6f4e37;
+    color: #fbe3d3;
+    border-radius: 5px;
+}
+
+
+/* -------------------- AGREGAR BOTON ----------------- */
+.boton-carrito {
+    background-color: #a97458;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.boton-carrito:hover {
+    background-color: #a97458;
+}
+
+/* -------------------- ELIMINAR BOTON ----------------- */
+.carrito button {
+    border: none;
+    background-color:#ffb6c1;
+    cursor: pointer;
+}
+
+
+/* -------------------- TARJETA CARRITO ----------------- */
+.tarjeta-carrito {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #6f4e37;
+    background-color: #ffb6c1;
+    border-bottom: none;
+    border-top: none;
+    border-radius: 15px;
+    list-style-type: none;
+}
+
+.tarjeta-carrito button {
+    border: none;
+    background-color: #ffb6c1;
+    cursor: pointer;
+}
+
+/* -------------------- SECCION CARRITO ----------------- */
+
+.seccion-carrito {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.seccion-carrito ul {
+    padding-left: 0;
+    width: 40%;
+}
+
+.seccion-carrito h2 {
+    font-family: Wintering;
+    color: #403f3f;
+    font-size: 70px;
+}
+
+.seccion-carrito p {
+    font-family: Jingle;
+    font-weight: bold;
+    color: #403f3f;
+    padding-left: 5px;
+    font-size: 20px ;
+}
+
+.seccion-carrito li {
+    margin: 5px 0;
+    width: 100%;
+}
+
+
+
+/* -------------------- TOTAL CARRITO ----------------- */
+
+.total-carrito {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: WinkySans;
+    border: 3px solid #403f3f;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 10px;
+    background-color: #6f4e37;
+    width: 10%;
+    color: #fbe3d3;
+    font-size: 25px;
+}
+
+
+/* -------------------- SEPARADOR TITULO ----------------- */
+
+.separador-titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 20px;
+}
+
+.separador-titulo hr {
+    flex: 0.4;
+    height: 2px;
+    border: none;
+    background-color: #403f3f; 
+    opacity: 0.6;
+    margin: 0 15px;
+}
+
+.separador-titulo span {
+    font-family: "Wintering";  
+    font-size: 70px;
+    color: #403f3f;
+    letter-spacing: 2px;
+    white-space: nowrap;
+}
+
+
+
+/* -------------------- MEDIA QUERYES ----------------- */
+
+@media (max-width: 1625px) {
+    .total-carrito {
+    width: 20%;
+    }
+}
+
+@media (max-width: 912px) {
+    .total-carrito {
+    width: 30%;
+    }
+}
+
+@media (max-width: 590px) {
+    .total-carrito {
+    width: 50%;
+    }
+
+    .seccion-carrito ul {
+    width: 80%;
+    }
+
+    .barra-busqueda {
+    width: 50%;
+    }
+}
+
+@media (max-width: 360px) {
+
+    .separador-titulo span {
+        font-size: 40px;
+    }
+
+    .barra-busqueda {
+        width: 36%;
+    }
+
+}

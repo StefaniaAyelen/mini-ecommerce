@@ -1,0 +1,30 @@
+@font-face {
+    font-family: "WinkySans";
+    src: url("fonts/WinkySans-Italic-VariableFont_wght.ttf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Wintering";
+    src: url("fonts/Wintering.otf") format("truetype");
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "Dreaming";
+    src: url("fonts/Dreaming.ttf") format("truetype");
+    font-weight: 400;
+}
+
+
+@font-face {
+    font-family: "Jingle";
+    src: url("fonts/Jingle Balls.ttf") format("truetype");
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "Bethia";
+    src: url("fonts/Bethia.ttf") format("truetype");
+    font-weight: 400;
+}
