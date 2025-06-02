@@ -2,6 +2,10 @@
     margin: 0px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #fbe3d3;
 }
@@ -144,7 +148,7 @@ body {
 
 /* -------------------- SECCION CARRITO ----------------- */
 
-.seccion-carrito {
+#seccion-carrito {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -152,19 +156,18 @@ body {
     width: 100%;
     margin: 0 auto;
 }
-
-.seccion-carrito ul {
+#seccion-carrito ul {
     padding-left: 0;
     width: 40%;
 }
 
-.seccion-carrito h2 {
+#seccion-carrito h2 {
     font-family: Wintering;
     color: #403f3f;
     font-size: 70px;
 }
 
-.seccion-carrito p {
+#seccion-carrito p {
     font-family: Jingle;
     font-weight: bold;
     color: #403f3f;
@@ -172,7 +175,7 @@ body {
     font-size: 20px ;
 }
 
-.seccion-carrito li {
+#seccion-carrito li {
     margin: 5px 0;
     width: 100%;
 }
