@@ -11,6 +11,17 @@ let productosTienda = [
 {id: 10, titulo: "Rosca pascua", precio: 7000, img: "imgs/roscapascua.png"},
 {id: 11, titulo: "Torta oreo", precio: 12000, img: "imgs/tortaOreo.png"},
 {id: 12, titulo: "Torta", precio: 15000, img: "imgs/tortapersonalizada.png"},
+{id: 13, titulo: "Lemon Pay", precio: 20000, img: "imgs/lemon.png"},
+{id: 14, titulo: "Rogel", precio: 25000, img: "imgs/rogel.png"},
+{id: 15, titulo: "Torta de Manzana", precio: 30000, img: "imgs/tortamanzana.png"},
+{id: 16, titulo: "Carrot Cake", precio: 27000, img: "imgs/zanahoria.png"},
+{id: 17, titulo: "Arrollado frutal", precio: 15000, img: "imgs/arrollado.png"},
+{id: 18, titulo: "Torta Francia", precio: 35000, img: "imgs/francia.png"},
+{id: 19, titulo: "Budin de Chocolate", precio: 17000, img: "imgs/budinchocolate.png"},
+{id: 20, titulo: "Pasta Frola", precio: 15000, img: "imgs/pastafrola.jpeg"},
+{id: 21, titulo: "Macarons", precio: 5000, img: "imgs/macarons.png"},
+{id: 22, titulo: "Tarta de frutos rojos", precio: 27000, img: "imgs/tartafrutos.png"},
+{id: 23, titulo: "Croissant", precio: 9000, img: "imgs/croissant.png"},
 ]
 
 
@@ -21,7 +32,7 @@ let cantidad = 0;
 let productoContainer = document.querySelector(".container-productos");
 let barraBusqueda = document.querySelector(".barra-busqueda");
 let itemsCarrito = document.getElementById("items-carrito");
-let totalCarrito = document.querySelector(".total-carrito")
+let totalCarrito = document.querySelector(".total-carrito");
 
 
 ///////////////////////////   MOSTRAR PRODUCTOS   //////////////////////////////////////
@@ -40,6 +51,7 @@ function mostrarProductos (array) {
     
     productoContainer.innerHTML = cartaProducto;
 }
+
 
 ///////////////////////////   BARRA DE BUSQUEDA  //////////////////////////////////////
 
