@@ -119,8 +119,18 @@ function mostrarTotal() {
     carrito.forEach(item => {
         total += (item.precio * item.cantidad)
     })
-    variable += `<h3>Total: $${total}</h3>`  
+    variable += `<h3>Total: $${total}</h3>
+    <button onclick ="vaciarCarrito()">Vaciar carrito</button>`  
     totalCarrito.innerHTML = variable;
+}
+
+///////////////////////////   VACIAR CARRITO   //////////////////////////////////////
+
+function vaciarCarrito() {
+    carrito = []
+    localStorage.setItem("carrito", JSON.stringify([]));
+    mostrarCarrito()
+    mostrarTotal()
 }
 
 
